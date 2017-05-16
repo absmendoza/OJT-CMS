@@ -16,13 +16,6 @@ class UserTableSeeder extends Seeder
         $role_user = Role::where('name', 'User')->first();
         $role_admin = Role::where('name', 'Admin')->first();
 
-        $user->firstname = 'User';
-        $user->lastname = 'User';
-        $user->email = 'user@example.com';
-        $user->password = 'useruser';
-        $user->save();
-        $user->roles()->attach($role_user); // attach a role to a user
-
         $admin = new User();
         $admin->firstname = 'Admin';
         $admin->lastname = 'Admin';

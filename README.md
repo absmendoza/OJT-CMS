@@ -1,4 +1,4 @@
-#Getting Started
+# Getting Started
 1. Modify the following from .env.example:
   ```
   DB_DATABASE=homestead
